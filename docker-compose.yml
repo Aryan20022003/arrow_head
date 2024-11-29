@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: stock_data_processor_app
+    volumes:
+      - .:/app
+    command: python src/run.py  
